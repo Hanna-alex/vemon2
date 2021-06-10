@@ -343,7 +343,6 @@ template {
 
 body {
   font-family: 'Roboto', sans-serif;
-  background-color: #000;
   color: #fff;
 }
 
@@ -386,6 +385,10 @@ body {
   color: rgba(255, 255, 255, 0.5);
 }
 
+.film {
+  margin-bottom: 144px;
+}
+
 .film__date {
   display: block;
   margin-bottom: 38px;
@@ -403,4 +406,48 @@ body {
   font-size: 16px;
   line-height: 140%;
   color: rgba(255, 255, 255, 0.8);
+}
+
+.film__button-group {
+  margin-top: 70px;
+}
+
+.button {
+  padding: 15px 30px;
+  border: none;
+  border-radius: 5px;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.button__icon, .button__text {
+  display: inline-block;
+  vertical-align: middle;
+}
+
+.button__text {
+  font-size: 14px;
+  line-height: 16px;
+  margin-left: 10px;
+}
+
+.button__primery {
+  margin-right: 20px;
+  color: #8D0019;
+  background-color: #fff;
+}
+
+.button__link {
+  color: #fff;
+}
+
+.venom {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 626px;
+}
+
+.blood {
+  background: url(../img/blood.png) no-repeat top right, #000 url(../img/bg.png) no-repeat center center/cover;
 }
