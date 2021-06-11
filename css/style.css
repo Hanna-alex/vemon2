@@ -341,14 +341,27 @@ template {
   display: none;
 }
 
+* {
+  margin: 0;
+}
+
 body {
   font-family: 'Roboto', sans-serif;
+  font-weight: normal;
   color: #fff;
 }
 
 .container {
   max-width: 1140px;
   margin: auto;
+}
+
+.blood {
+  background: url(../img/blood.png) no-repeat top right, #000 url(../img/bg.png) no-repeat center center/cover;
+}
+
+.secondery-bg {
+  background: #000 url(../img/bg.png) no-repeat center center/cover;
 }
 
 .header {
@@ -448,6 +461,92 @@ body {
   width: 626px;
 }
 
-.blood {
-  background: url(../img/blood.png) no-repeat top right, #000 url(../img/bg.png) no-repeat center center/cover;
+.content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding-bottom: 116px;
+}
+
+.content__title {
+  margin-bottom: 20px;
+  font-weight: bold;
+  font-size: 36px;
+  line-height: 42px;
+  color: rgba(255, 255, 255, 0.8);
+}
+
+.content__text {
+  margin-bottom: 30px;
+  max-width: 423px;
+  font-size: 16px;
+  line-height: 140%;
+  color: rgba(255, 255, 255, 0.8);
+}
+
+.content__subtitle {
+  margin-bottom: 15px;
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 140%;
+  color: rgba(255, 255, 255, 0.8);
+}
+
+.content__list {
+  list-style: none;
+  padding: 0;
+  font-size: 16px;
+  line-height: 140%;
+  color: rgba(255, 255, 255, 0.8);
+}
+
+.content__trailer {
+  border-radius: 5px;
+}
+
+.content__video {
+  border: none;
+  border-radius: 5px;
+}
+
+.content__wrapper-poster {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: start;
+}
+
+.content__poster {
+  width: 362px;
+  height: 543px;
+  border-radius: 5px;
+  margin-right: 30px;
+}
+
+.col {
+  -ms-flex-preferred-size: 50%;
+      flex-basis: 50%;
+}
+
+.cast-list {
+  margin-bottom: 33px;
+  -webkit-column-count: 2;
+          column-count: 2;
+  -webkit-column-gap: 20px;
+          column-gap: 20px;
+  max-width: 312px;
+}
+
+.list__item {
+  font-weight: normal;
+}
+
+.creators__list {
+  margin-bottom: 20px;
+}
+
+.creators__subtitle {
+  margin-bottom: 5px;
 }
