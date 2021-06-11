@@ -17,7 +17,21 @@
       rel="stylesheet"
     />
     <link rel="stylesheet" href="css/style.css" />
+    <script src="js/main.js" defer></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.min.js"
+      defer
+    ></script>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.css"
+    />
+    <script
+      src="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.js"
+      defer
+    ></script>
   </head>
+
   <body class="secondery-bg">
     <div class="container">
       <header class="header">
@@ -31,6 +45,26 @@
           />
         </a>
         <nav class="header__nav nav">
+          <button class="nav__menu-button menu-button">
+            <span class="menu-button__text">меню</span>
+            <img
+              width="24"
+              height="14"
+              src="img/menu-button.svg"
+              alt="icon: menu burger"
+              class="menu-button__icon"
+            />
+          </button>
+          <button class="nav__menu-button-close menu-button">
+            <span class="menu-button-close__text">закрыть</span>
+            <img
+              width="22"
+              height="18"
+              src="img/menu-errow.svg"
+              alt="icon: errow right"
+              class="menu-button-close__icon"
+            />
+          </button>
           <ul class="nav__menu">
             <li class="nav__item">
               <a href="about.html" class="nav__link">о фильме</a>
@@ -48,7 +82,7 @@
         </nav>
       </header>
       <section class="content">
-        <div class="col">
+        <div class="col-1">
           <h2 class="content__title">О фильме</h2>
           <p class="content__text">
             В&nbsp;настырном журналисте по-прежнему живет симбиот. Том Харди
@@ -67,21 +101,30 @@
             <li class="list__item">Уилльям Барбо</li>
             <li class="list__item">Пегги Лу</li>
           </ul>
-          <div class="content__trailer">
-            <iframe
-              width="356"
-              height="205"
-              src="https://www.youtube.com/embed/Othd8W8o3t0"
-              title="YouTube video player"
-              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-              allowfullscreen
-              class="content__video"
-            ></iframe>
+          <div class="content__trailer trailer">
+            <img
+              src="img/trailer-bg.jpg"
+              alt="photo venom-2 trailer"
+              class="trailer__bg"
+            />
+            <a
+              data-fancybox
+              href="https://www.youtube.com/watch?v=Othd8W8o3t0"
+              class="trailer__button"
+            >
+              <img
+                width="15"
+                height="15"
+                src="img/play.svg"
+                alt="icon: play"
+                class="trailer__icon"
+              />
+            </a>
           </div>
           <!-- /.content__trailer -->
         </div>
         <!-- /.col -->
-        <div class="col">
+        <div class="col-2">
           <div class="content__wrapper-poster">
             <img
               src="img/poster.jpg"

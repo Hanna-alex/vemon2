@@ -17,6 +17,19 @@
       rel="stylesheet"
     />
     <link rel="stylesheet" href="css/style.css" />
+    <script src="js/main.js" defer></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.min.js"
+      defer
+    ></script>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.css"
+    />
+    <script
+      src="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.js"
+      defer
+    ></script>
   </head>
   <body class="blood">
     <div class="container">
@@ -31,6 +44,26 @@
           />
         </a>
         <nav class="header__nav nav">
+          <button class="nav__menu-button menu-button">
+            <span class="menu-button__text">меню</span>
+            <img
+              width="24"
+              height="14"
+              src="img/menu-button.svg"
+              alt=""
+              class="menu-button__icon"
+            />
+          </button>
+          <button class="nav__menu-button-close menu-button-close">
+            <span class="menu-button-close__text">закрыть</span>
+            <img
+              width="22"
+              height="18"
+              src="img/menu-errow.svg"
+              alt=""
+              class="menu-button__icon"
+            />
+          </button>
           <ul class="nav__menu">
             <li class="nav__item">
               <a href="about.html" class="nav__link">о фильме</a>
@@ -56,13 +89,19 @@
             class="film__logo"
           />
           <p class="film__description">
-            В&nbsp;настырном журналисте по-прежнему живет симбиот. Том Харди
-            в&nbsp;образе обаятельного суперзлодея из&nbsp;комиксов Marvel.
+            В&nbsp;настырном журналисте по&nbsp;-&nbsp;прежнему живет симбиот.
+            <br />
+            Том Харди в&nbsp;образе обаятельного суперзлодея из&nbsp;комиксов
+            Marvel.
           </p>
         </div>
         <!-- /.film__text -->
         <div class="button-group film__button-group">
-          <button class="button button__primery">
+          <a
+            data-fancybox
+            href="https://www.youtube.com/watch?v=Othd8W8o3t0"
+            class="button button__primery"
+          >
             <img
               width="15"
               src="img/play.svg"
@@ -70,7 +109,7 @@
               class="button__icon"
             />
             <span class="button__text">смотреть трейлер</span>
-          </button>
+          </a>
           <a href="#" class="button button__link">
             <img width="15" src="img/ticket.svg" alt="icon: ticket" />
             <span class="button__text">билеты на премьеру</span>
