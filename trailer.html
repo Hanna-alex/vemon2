@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>О фильме Venom - 2</title>
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="img/favicon-16x16.png"
+    />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/style.css" />
+    <script src="js/main.js" defer></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.min.js"
+      defer
+    ></script>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.css"
+    />
+    <script
+      src="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.js"
+      defer
+    ></script>
+  </head>
+
+  <body class="secondery-bg">
+    <div class="container">
+      <header class="header">
+        <a href="/" class="header__logo-link logo">
+          <img
+            width="46"
+            height="81"
+            src="img/logo.png"
+            alt="logo: venom"
+            class="logo__img"
+          />
+        </a>
+        <nav class="header__nav nav">
+          <button class="nav__menu-button menu-button">
+            <span class="menu-button__text">меню</span>
+            <img
+              width="24"
+              height="14"
+              src="img/menu-button.svg"
+              alt="icon: menu burger"
+              class="menu-button__icon"
+            />
+          </button>
+
+          <button class="nav__menu-button-close menu-button-close">
+            <span class="menu-button-close__text">закрыть</span>
+            <img
+              width="22"
+              height="18"
+              src="img/menu-errow.svg"
+              alt="icon: errow right"
+              class="menu-button-close__icon"
+            />
+          </button>
+
+          <ul class="nav__menu">
+            <li class="nav__item">
+              <a href="about.html" class="nav__link">о фильме</a>
+            </li>
+            <li class="nav__item">
+              <a href="trailer.html" class="nav__link">трейлер</a>
+            </li>
+            <li class="nav__item">
+              <a href="actors.html" class="nav__link">актеры</a>
+            </li>
+            <li class="nav__item">
+              <a href="premiere.html" class="nav__link">премьера</a>
+            </li>
+          </ul>
+        </nav>
+      </header>
+      <section class="trailer-page">
+        <div class="trailer-page__wrapper">
+          <h2 class="trailer-page__title">Трейлер</h2>
+
+          <div class="trailer-page__video">
+            <img
+              src="img/trailer-bg2.png"
+              alt="photo venom-2 trailer"
+              class="trailer-page__bg"
+            />
+            <a
+              data-fancybox
+              href="https://www.youtube.com/watch?v=Othd8W8o3t0"
+              class="trailer__button"
+            >
+              <img
+                width="15"
+                height="15"
+                src="img/play.svg"
+                alt="icon: play"
+                class="trailer__icon"
+              />
+            </a>
+          </div>
+          <!-- /.trailer-page__wrapper -->
+        </div>
+        <!-- /.trailer-page__video -->
+      </section>
+    </div>
+    <!-- /.container -->
+  </body>
+</html>
